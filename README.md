@@ -1,6 +1,6 @@
 # Jeet Patel's Front-End Developer Portfolio
 
-![Jeet Patel's Portfolio](portfolio-screenshot.png)
+![Jeet Patel's Portfolio]()
 
 ## Introduction
 
