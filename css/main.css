@@ -1,14 +1,1 @@
-h3 {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-}
-
-@media screen and (min-width: 730px) {
-  .hambur {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hidden {
-    display: contents;
-  }
-}
+h3{font-family:Raleway,Arial,Helvetica,sans-serif}.navbar{overflow:hidden;font-family:Raleway,Arial,Helvetica,sans-serif}.nav-container{background:orange;border-radius:10px;border-bottom-left-radius:150px;display:flex;justify-content:center}.nav-container li{margin:0 20px;position:relative}.nav-container li a{background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0);background-image:linear-gradient(to right, #00aabb, #00aabb 50%, #fff 50%);background-size:200% 100%;background-position:-100%;transition:all .3s ease-in-out}.nav-container li a:before{display:block;content:"";width:0;height:3px;bottom:5px;left:0;bottom:-3px;z-index:0;position:absolute;background:#0ab;transition:all .3s ease-in-out}.nav-container li a:hover{background-position:0%}.nav-container li a:hover:before{width:100%}.nav-links{list-style-type:none;padding-left:20px}.nav-links li{display:inline-block;margin-right:20px}.nav-links li a{font-size:135%;display:block;text-decoration:none;color:#fff;font-weight:bold;border-radius:10px}.nav-links li a:hover{background-color:#0ab}

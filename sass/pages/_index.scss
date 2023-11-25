@@ -1,19 +1,1 @@
 @forward 'home';
-
-// .hidden {
-//     display: none;
-// }
-
-@media screen and (min-width: 730px) {
-    .hambur {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-
-    .hidden {
-        display: contents;
-    }
-}
