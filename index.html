@@ -14,23 +14,33 @@
     <title>Jeetpatel-portfolio</title>
   </head>
   <body>
-    <!-- ----------mobile-menu---------- -->
-    <!-- <div class="mobile-nav grid-con">
-      <div class="menu-ball"></div>
-      <ul class="mobile-nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Section</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">My Work</a></li>
-        <li><a href="#contact">Contact me</a></li>
-      </ul>
-    </div> -->
-
-    <!-- ----------main-menu---------- -->
-    <nav class="navbar">
+    <nav>
+      <h1 class="hidden">Main-Navigation</h1>
+      <!-- ----------main-menu---------- -->
+      <div class="navbar">
+        <div class="grid-con">
+          <div
+            class="nav-con m-col-start-5 l-col-start-7 xl-col-start-8 m-col-end-13"
+          >
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Section</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">My Work</a></li>
+              <li><a href="#contact">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ----------mobile-menu---------- -->
       <div class="grid-con">
-        <div class="nav-container m-col-start-6 xl-col-start-8 m-col-end-13">
-          <ul class="nav-links">
+        <div class="mobile-navbar col-start-4">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Section</a></li>
             <li><a href="#services">Services</a></li>
@@ -40,6 +50,11 @@
         </div>
       </div>
     </nav>
+
+    <section class="Home">
+      <h1 class="hidden">Home Page - Jeetpatel-portfolio</h1>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
