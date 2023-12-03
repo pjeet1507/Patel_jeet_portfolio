@@ -1,11 +1,8 @@
-$tran-color: #ffa500;
-$hover-color: #00aabb;
-$def-color: rgb(255, 255, 255);
-$font: Raleway, Arial, Helvetica, sans-serif;
+@use "../abstracts/variables" as v;
 
 .navbar {
     overflow: hidden;
-    font-family: $font;
+    font-family: v.$font;
 }
 
 
@@ -16,7 +13,7 @@ $font: Raleway, Arial, Helvetica, sans-serif;
     justify-content: space-around;
     width: 70px;
     height: 70px;
-    background-color: $tran-color;
+    background-color: v.$tran-color;
     border-radius: 50%;
     padding: 5px;
 
@@ -36,15 +33,18 @@ $font: Raleway, Arial, Helvetica, sans-serif;
 
 
 .mobile-nav-links {
+    background-color: rgba(255, 165, 0, 0.5);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     margin-top: 90px;
-    margin-right: 100px;
+    margin-right: 100 px;
     position: fixed;
     right: -100%;
     top: 0;
     transition: 0.3s;
 
     li {
-        border-bottom: 0.5px solid $hover-color;
+        border-bottom: 0.5px solid v.$hover-color;
         list-style-type: none;
         padding: 7px;
         display: flex;
@@ -52,7 +52,7 @@ $font: Raleway, Arial, Helvetica, sans-serif;
 
         a {
             text-decoration: none;
-            font-family: $font;
+            font-family: v.$font;
             color: black;
             font-size: xx-large;
         }
@@ -75,7 +75,7 @@ $font: Raleway, Arial, Helvetica, sans-serif;
 
     .nav-con {
 
-        background: $tran-color;
+        background: v.$tran-color;
         border-radius: 10px;
         border-bottom-left-radius: 150px;
         display: flex;
@@ -89,7 +89,7 @@ $font: Raleway, Arial, Helvetica, sans-serif;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                background-image: linear-gradient(to right, $hover-color, $hover-color 50%, #fff 50%);
+                background-image: linear-gradient(to right, v.$hover-color, v.$hover-color 50%, #fff 50%);
                 background-size: 200% 100%;
                 background-position: -100%;
                 transition: all 0.3s ease-in-out;
@@ -104,7 +104,7 @@ $font: Raleway, Arial, Helvetica, sans-serif;
                     bottom: -3px;
                     z-index: 0;
                     position: absolute;
-                    background: $hover-color;
+                    background: v.$hover-color;
                     transition: all 0.3s ease-in-out;
                 }
 
@@ -131,12 +131,12 @@ $font: Raleway, Arial, Helvetica, sans-serif;
                 font-size: 135%;
                 display: block;
                 text-decoration: none;
-                color: $def-color;
+                color: v.$def-color;
                 font-weight: bold;
                 border-radius: 10px;
 
                 &:hover {
-                    background-color: $hover-color;
+                    background-color: v.$hover-color;
                 }
             }
         }
