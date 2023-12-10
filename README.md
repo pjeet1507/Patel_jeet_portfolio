@@ -46,3 +46,6 @@ This project is licensed under the MIT license.
 Crafted with dedication and passion by Jeet Patel. [Get in touch!](https://github.com/pjeet1507)
 
 ---
+
+<!-- chat-GPT  -->
+<!-- help this text part of the README file -->
