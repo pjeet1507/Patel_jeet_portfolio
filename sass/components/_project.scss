@@ -1,0 +1,148 @@
+@use "../abstracts/variables" as v;
+
+.projects {
+    height: 100vh;
+
+    a {
+        text-decoration: none;
+    }
+
+    .bg-box {
+        background-color: rgba(189, 71, 71, 0.8);
+        filter: drop-shadow(1em 1em 0 rgba(189, 71, 71, 0.7));
+        border-radius: 20px;
+        width: 70vw;
+        height: 40vh;
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.9em;
+        font-family: v.$font;
+
+        img {
+            padding: 5px;
+            width: 27vh;
+        }
+
+        .skill-text {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+
+.textdiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .con-title {
+        font-size: 2rem;
+        opacity: 0;
+        transform: translateY(100px);
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    background-color: rgba(189, 71, 71, 0.9);
+    filter: drop-shadow(1em 1em 0 rgba(189, 71, 71, 0.7));
+    z-index: 1000;
+    overflow: auto;
+    font-family: v.$font;
+    color: black;
+
+
+    .lb_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        text-decoration: none;
+        z-index: 1001;
+
+        &:hover {
+            border: 1px solid rgb(112, 58, 58);
+            filter: drop-shadow(0.1em 0.1em 0 rgba(112, 58, 58, 0.7));
+            border-radius: 30px;
+            padding: 1px;
+        }
+    }
+
+    .lightbox-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+
+        img {
+            padding: 5px;
+            width: 15vh;
+        }
+
+
+
+        span {
+            font-style: bold;
+            font-weight: 600;
+        }
+
+    }
+}
+
+.lightbox:target {
+    display: block;
+}
+
+@media screen and (min-width: 730px) {
+    .projects {
+
+        .bg-box {
+
+            width: 40vw;
+            height: 50vh;
+
+        }
+    }
+
+    .textdiv {
+        .con-title {
+            font-size: 5rem;
+        }
+
+        .lightbox-content {
+
+
+            img {
+                padding: 5px;
+                width: 55vh;
+            }
+        }
+    }
+
+    .lightbox {
+        width: 90%;
+        height: 90%;
+    }
+}

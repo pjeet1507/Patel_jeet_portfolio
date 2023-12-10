@@ -18,7 +18,14 @@
 
   // scroll triger [background color]
 
-  const colors = ["#7FBFD2", "#B8A2FE", "#967BB6", "#6dcc7a", "#eb4d55"];
+  const colors = [
+    "#7FBFD2",
+    "#B8A2FE",
+    "#967BB6",
+    "#6dcc7a",
+    "#eb4d55",
+    "#efa047",
+  ];
   const sections = gsap.utils.toArray("section");
 
   sections.forEach((section, index) => {

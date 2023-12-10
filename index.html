@@ -15,6 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
     <title>Jeetpatel-portfolio</title>
   </head>
   <body>
@@ -111,8 +120,8 @@
       <div class="main-video">
         <div class="col-span-full" id="player-container">
           <video controls poster="images/video-thumbnail.jpg">
-            <source src="video/1-Name_final_reel.mp4" type="video/mp4" />
-            <source src="video/video.webm" type="video/webm" />
+            <source src="video/DemoReel.mp4" type="video/mp4" />
+            <source src="video/DemoReel_webm.webm" type="video/webm" />
             <p>
               You're using a very old browser, that doesn;t support video
               playback.
@@ -281,7 +290,76 @@
       </div>
     </section>
     <!-- -----------projects-------------- -->
-    <select class="projects"></select>
+    <section class="projects grid-con">
+      <div class="textdiv col-start-1 col-end-5 m-col-end-12">
+        <h1 class="con-title">Projects</h1>
+      </div>
+      <div id="come_here_project"></div>
+      <div class="textdiv col-start-1 col-end-5 m-col-end-12">
+        <a href="#project1Lb">
+          <div class="bg-box">
+            <img src="./images/JAZ-home.jpg" alt="JAZ Case - study" />
+            <h1 class="Skill-text">JAZ Pods</h1>
+          </div>
+        </a>
+        <a href="#project2Lb">
+          <div class="bg-box">
+            <img
+              src="./images/Industry.jpg"
+              alt="Industry night Case - study"
+            />
+            <h1 class="Skill-text">JAZ Pods</h1>
+          </div>
+        </a>
+
+        <div class="lightbox" id="project1Lb">
+          <a href="#come_here_project" class="lb_close">X</a>
+          <div class="lightbox-content">
+            <img src="./images/JAZ-home.jpg" alt="JAZ Case - study" />
+            <p>
+              <span>Web Presence Website Design:</span> The
+              <span>JAZ </span> Earbuds website utilizes a modern, minimalist
+              design with a focus on immersive visuals and ease of navigation.
+              The use of the Raleway font adds a touch of Perfection.
+            </p>
+            <p>
+              <span>Navigation:</span> A sticky navigation bar with a hamburger
+              menu on smaller screens ensures easy access to all sections.
+            </p>
+            <p>
+              <span>Imagery:</span> High-resolution images and 3D models of the
+              earbuds are prominently displayed, highlighting the product's
+              sleek design and features.
+            </p>
+          </div>
+        </div>
+        <div class="lightbox" id="project2Lb">
+          <a href="#come_here_project" class="lb_close">X</a>
+          <div class="lightbox-content">
+            <img
+              src="./images/Industry.jpg"
+              alt="Industry night Case - study"
+            />
+            <p>
+              <span> Website Design:</span> The website uses a combination of
+              Montserrat and Open Sans fonts, providing a clean and modern look
+              that aligns with the event's creative and digital focus.
+            </p>
+            <p>
+              <span>Color Scheme:</span> The site features a dynamic color
+              scheme with a red-dominated navigation bar, setting a professional
+              yet energetic tone.
+            </p>
+            <p>
+              <span>Navigation:</span> The navigation bar is responsive,
+              adapting to various screen sizes, and includes links to different
+              sections of the event (About, Program, Projects, Testimonials,
+              etc.).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ----------Contact---------------- -->
     <section class="contact grid-con">
       <div
@@ -317,9 +395,5 @@
         </form>
       </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
