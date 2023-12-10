@@ -28,7 +28,6 @@ html {
 }
 
 .box {
-  /* background-color: rgb(214, 161, 170); */
   color: rgb(8, 0, 0);
   border-radius: 5px;
   padding: 20px;
@@ -41,10 +40,6 @@ html {
 /* 2. ---Mobile Library Grid Styles--- */
 
 /*---We do not use media queries for mobile or Justin will find us...*/
-
-/*body {
-   background-color: #000;
- }*/
 
 .full-width-grid-con {
   display: grid;
@@ -150,10 +145,6 @@ html {
 /* 3. ---Tablet Library Grid Styles--- */
 
 @media screen and (min-width: 730px) {
-  /*body {
-     background: #ff0000;
-   }*/
-
   .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1199px) 1fr;
@@ -166,7 +157,6 @@ html {
     max-width: 1199px;
     padding-left: 15px;
     padding-right: 15px;
-    /*--remove below when you fully understand the passing of rules and values(this rule only)--*/
   }
 
   .m-col-span-1 {
@@ -351,10 +341,6 @@ html {
 /* 4. ---Desktop Library Grid Styles--- */
 
 @media screen and (min-width: 1200px) {
-  /*body {
-       background: #00ff48;
-     }*/
-
   .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1919px) 1fr;
@@ -552,10 +538,6 @@ html {
 /* 5. ---X-Large Desktop Library Grid Styles--- */
 
 @media screen and (min-width: 1920px) {
-  /*body {
-       background: #0400e0;
-     }*/
-
   .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1920px) 1fr;
