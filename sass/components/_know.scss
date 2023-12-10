@@ -1,0 +1,174 @@
+@use "../abstracts/variables" as v;
+
+.i_know {
+    height: 100vh;
+    padding-bottom: 30px;
+
+    .textdiv {
+        display: flex;
+        justify-content: center;
+
+        .con-title {
+            font-size: 2rem;
+            opacity: 0;
+            transform: translateY(100px);
+            font-family: 'Raleway', sans-serif;
+            color: white;
+        }
+    }
+
+    .outer-shell {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .bg-box {
+            background-color: rgba(112, 255, 99);
+            filter: drop-shadow(1em 1em 0 rgba(112, 255, 99, 0.7));
+            border-radius: 20px;
+            width: 39vw;
+            height: 39vw;
+            margin: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9em;
+            font-family: v.$font;
+
+            img {
+                padding: 5px;
+                width: 8vh;
+            }
+
+            .skill-text {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    background-color: rgba(206, 255, 201, 0.9);
+    filter: drop-shadow(1em 1em 0 rgba(206, 255, 201, 0.7));
+    z-index: 1000;
+    overflow: auto;
+    font-family: v.$font;
+    color: black;
+
+
+    .lb_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        text-decoration: none;
+        z-index: 1001;
+
+        &:hover {
+            border: 1px solid rgba(127, 161, 123, 0.9);
+            filter: drop-shadow(0.1em 0.1em 0 rgba(127, 161, 123, 0.7));
+            border-radius: 30px;
+            padding: 1px;
+        }
+    }
+
+    .lightbox-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+        font-size: 1.2em;
+        text-align: center;
+
+        img {
+            padding: 5px;
+            width: 15vh;
+        }
+
+        span {
+            font-style: bold;
+            font-weight: 600;
+        }
+
+    }
+}
+
+.lightbox:target {
+    display: block;
+}
+
+@media screen and (min-width: 730px) {
+    .i_know {
+        .textdiv {
+            .con-title {
+                font-size: 5rem;
+            }
+        }
+
+        .outer-shell {
+            margin: 5px;
+
+            a {
+                margin: 3px;
+            }
+
+            .bg-box {
+                width: 39vw;
+                height: 30vw;
+
+                &:hover {
+                    filter: drop-shadow(1.4em 1.4em 0 rgba(112, 255, 99, 0.7));
+                }
+
+                img {
+                    width: 15vh;
+
+                    &:hover {
+                        filter: drop-shadow(0.3em 0.3em 0 rgba(0, 0, 0, 0.3));
+                    }
+                }
+
+                .Skill-text {
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .i_know {
+
+        .outer-shell {
+            margin: 5px;
+
+            .bg-box {
+                width: 25vw;
+                height: 13vw;
+            }
+        }
+    }
+}

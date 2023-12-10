@@ -18,7 +18,7 @@
 
   // scroll triger [background color]
 
-  const colors = ["#7FBFD2", "#B8A2FE", "#0000ff"];
+  const colors = ["#7FBFD2", "#B8A2FE", "#6dcc7a", "#eb4d55"];
   const sections = gsap.utils.toArray("section");
 
   sections.forEach((section, index) => {
@@ -40,4 +40,19 @@
     });
   });
   //---------------------------------
+  // contact animation
+
+  gsap.to(".con-title", {
+    duration: 1,
+    opacity: 1,
+    y: 0,
+    delay: 0.5,
+  });
+  gsap.to(".con-subtitle", {
+    duration: 1,
+    opacity: 1,
+    y: 0,
+    delay: 0.7,
+  });
+  //---------------------
 })();
